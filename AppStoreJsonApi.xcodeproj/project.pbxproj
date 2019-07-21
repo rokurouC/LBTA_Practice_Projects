@@ -18,9 +18,11 @@
 		1749623C22DB06440086C1F2 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749623B22DB06440086C1F2 /* VerticalStackView.swift */; };
 		1749623F22DCE7A70086C1F2 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749623E22DCE7A70086C1F2 /* SearchResult.swift */; };
 		1749624222DE5C900086C1F2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749624122DE5C900086C1F2 /* Service.swift */; };
+		F7DE3099876885770FE109A7 /* Pods_AppStoreJsonApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJsonApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172A1CDF22C920D20049AEEC /* AppStoreJsonApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJsonApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172A1CE222C920D30049AEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172A1CE722C920D30049AEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		1749623B22DB06440086C1F2 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		1749623E22DCE7A70086C1F2 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		1749624122DE5C900086C1F2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		694596B772088E48D8A87565 /* Pods-AppStoreJsonApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.debug.xcconfig"; sourceTree = "<group>"; };
+		C2C6C3E7BE050C08736E953D /* Pods-AppStoreJsonApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DE3099876885770FE109A7 /* Pods_AppStoreJsonApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				172A1CE122C920D30049AEEC /* AppStoreJsonApi */,
 				172A1CE022C920D20049AEEC /* Products */,
+				39307EB4038C0E0BCA1A0C1C /* Pods */,
+				B010F6DD67EFC4EE05A8CC0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +129,24 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		39307EB4038C0E0BCA1A0C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				694596B772088E48D8A87565 /* Pods-AppStoreJsonApi.debug.xcconfig */,
+				C2C6C3E7BE050C08736E953D /* Pods-AppStoreJsonApi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B010F6DD67EFC4EE05A8CC0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 172A1CF122C920D70049AEEC /* Build configuration list for PBXNativeTarget "AppStoreJsonApi" */;
 			buildPhases = (
+				BD4D26DF6B6CBFAE373E6A12 /* [CP] Check Pods Manifest.lock */,
 				172A1CDB22C920D20049AEEC /* Sources */,
 				172A1CDC22C920D20049AEEC /* Frameworks */,
 				172A1CDD22C920D20049AEEC /* Resources */,
+				E6231E5C2E19139F7EB092B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +214,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD4D26DF6B6CBFAE373E6A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppStoreJsonApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6231E5C2E19139F7EB092B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		172A1CDB22C920D20049AEEC /* Sources */ = {
@@ -344,6 +413,7 @@
 		};
 		172A1CF222C920D70049AEEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694596B772088E48D8A87565 /* Pods-AppStoreJsonApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +432,7 @@
 		};
 		172A1CF322C920D70049AEEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C6C3E7BE050C08736E953D /* Pods-AppStoreJsonApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
