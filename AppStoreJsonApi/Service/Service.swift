@@ -11,8 +11,8 @@ import Foundation
 class Service {
     static let shared = Service()
     
-    func fetchITunesApi(completion: @escaping ([Result], Error?) -> ()) {
-        let urlString = "https://itunes.apple.com/search?term=instagram&entity=software"
+    func fetchITunesApi(searchTerm: String, completion: @escaping ([Result], Error?) -> ()) {
+        let urlString = "https://itunes.apple.com/search?term=\(searchTerm)&entity=software"
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, rsp, err) in
             guard err == nil else {

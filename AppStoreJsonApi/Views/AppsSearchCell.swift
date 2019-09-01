@@ -35,7 +35,6 @@ class AppsSearchCell: UICollectionViewCell {
     
     let iconImgView: UIImageView = {
         let img = UIImageView()
-        img.backgroundColor = UIColor.red
         img.translatesAutoresizingMaskIntoConstraints = false
         img.widthAnchor.constraint(equalToConstant: 64).isActive = true
         img.heightAnchor.constraint(equalToConstant: 64).isActive = true
@@ -81,7 +80,6 @@ class AppsSearchCell: UICollectionViewCell {
     
     func createImageView() -> UIImageView{
         let imageView = UIImageView()
-        imageView.backgroundColor = UIColor.blue
         imageView.layer.cornerRadius = 8
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
