@@ -11,7 +11,7 @@ import SDWebImage
 
 let cellId = "id1234"
 
-class AppsSearchCollectionViewController: UICollectionViewController, UISearchBarDelegate,  UICollectionViewDelegateFlowLayout {
+class AppsSearchCollectionViewController: BaseListController, UISearchBarDelegate,  UICollectionViewDelegateFlowLayout {
     
     fileprivate var results = [Result]()
     fileprivate var searchController = UISearchController(searchResultsController: nil)
@@ -54,14 +54,6 @@ class AppsSearchCollectionViewController: UICollectionViewController, UISearchBa
                 }
             }
         })
-    }
-    
-    init() {
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented!")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
