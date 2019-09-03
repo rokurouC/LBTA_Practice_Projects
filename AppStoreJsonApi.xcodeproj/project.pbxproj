@@ -22,6 +22,8 @@
 		17C09B48231D7D5D00FFE6B1 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B47231D7D5D00FFE6B1 /* BaseListController.swift */; };
 		17C09B4C231D7FA200FFE6B1 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B4B231D7FA200FFE6B1 /* AppsGroupCell.swift */; };
 		17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B4D231D83DB00FFE6B1 /* AppsHorizontalController.swift */; };
+		17C09B50231ED5D400FFE6B1 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B4F231ED5D400FFE6B1 /* AppRowCell.swift */; };
+		17C09B52231EE1E800FFE6B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B51231EE1E800FFE6B1 /* Extensions.swift */; };
 		F7DE3099876885770FE109A7 /* Pods_AppStoreJsonApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		17C09B47231D7D5D00FFE6B1 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		17C09B4B231D7FA200FFE6B1 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
 		17C09B4D231D83DB00FFE6B1 /* AppsHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHorizontalController.swift; sourceTree = "<group>"; };
+		17C09B4F231ED5D400FFE6B1 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
+		17C09B51231EE1E800FFE6B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		694596B772088E48D8A87565 /* Pods-AppStoreJsonApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C6C3E7BE050C08736E953D /* Pods-AppStoreJsonApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +124,7 @@
 			children = (
 				1749623922DAFF370086C1F2 /* UIView+Layout.swift */,
 				1749623B22DB06440086C1F2 /* VerticalStackView.swift */,
+				17C09B51231EE1E800FFE6B1 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				17C09B4B231D7FA200FFE6B1 /* AppsGroupCell.swift */,
+				17C09B4F231ED5D400FFE6B1 /* AppRowCell.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -315,8 +321,10 @@
 				172A1CFB22CA73E90049AEEC /* AppsSearchCell.swift in Sources */,
 				172A1CF522C921C10049AEEC /* BaseTabBarController.swift in Sources */,
 				172A1CF822CA54910049AEEC /* AppsSearchViewControllerCollectionViewController.swift in Sources */,
+				17C09B50231ED5D400FFE6B1 /* AppRowCell.swift in Sources */,
 				1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */,
 				17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */,
+				17C09B52231EE1E800FFE6B1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
