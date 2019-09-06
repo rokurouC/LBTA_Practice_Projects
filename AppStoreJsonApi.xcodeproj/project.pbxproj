@@ -14,6 +14,7 @@
 		172A1CF522C921C10049AEEC /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A1CF422C921C10049AEEC /* BaseTabBarController.swift */; };
 		172A1CF822CA54910049AEEC /* AppsSearchViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A1CF722CA54910049AEEC /* AppsSearchViewControllerCollectionViewController.swift */; };
 		172A1CFB22CA73E90049AEEC /* AppsSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A1CFA22CA73E90049AEEC /* AppsSearchCell.swift */; };
+		172DA33E2322DFCD0016B476 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172DA33D2322DFCD0016B476 /* AppGroup.swift */; };
 		1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749623922DAFF370086C1F2 /* UIView+Layout.swift */; };
 		1749623C22DB06440086C1F2 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749623B22DB06440086C1F2 /* VerticalStackView.swift */; };
 		1749623F22DCE7A70086C1F2 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749623E22DCE7A70086C1F2 /* SearchResult.swift */; };
@@ -41,6 +42,7 @@
 		172A1CF422C921C10049AEEC /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		172A1CF722CA54910049AEEC /* AppsSearchViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		172A1CFA22CA73E90049AEEC /* AppsSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchCell.swift; sourceTree = "<group>"; };
+		172DA33D2322DFCD0016B476 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		1749623922DAFF370086C1F2 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		1749623B22DB06440086C1F2 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		1749623E22DCE7A70086C1F2 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1749623E22DCE7A70086C1F2 /* SearchResult.swift */,
+				172DA33D2322DFCD0016B476 /* AppGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				172A1CF522C921C10049AEEC /* BaseTabBarController.swift in Sources */,
 				17C09B56232010AB00FFE6B1 /* AppsHeaderHorizontalController.swift in Sources */,
 				172A1CF822CA54910049AEEC /* AppsSearchViewControllerCollectionViewController.swift in Sources */,
+				172DA33E2322DFCD0016B476 /* AppGroup.swift in Sources */,
 				17C09B50231ED5D400FFE6B1 /* AppRowCell.swift in Sources */,
 				1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */,
 				17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */,
