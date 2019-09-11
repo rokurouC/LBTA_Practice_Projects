@@ -56,4 +56,21 @@ class Service {
             }
             }.resume()
     }
+    
+    func fetchSocialApps(completion: @escaping ([SocialApp]?, Error?) -> Void) {
+        let urlStrin = "https://api.letsbuildthatapp.com/appstore/social"
+        guard let url = URL(string: urlStrin) else { return }
+        URLSession.shared.dataTask(with: url) { (data, res, error) in
+            if let err = error {
+                completion(nil, err)
+                return
+            }
+            do {
+                let socialApps = try JSONDecoder().decode([SocialApp].self, from: data!)
+                completion(socialApps, nil)
+            } catch {
+                print("Faild to decode:", error)
+            }
+            }.resume()
+    }
 }
