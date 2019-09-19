@@ -48,7 +48,7 @@ class AppsSearchCollectionViewController: BaseListController, UISearchBarDelegat
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
             Service.shared.fetchITunesApi(searchTerm: searchText) { (res, err) in
-                self.results = res
+                self.results = res?.results ?? []
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }

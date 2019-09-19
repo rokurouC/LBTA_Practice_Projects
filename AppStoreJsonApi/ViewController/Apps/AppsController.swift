@@ -52,7 +52,7 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
             
         }
         dispatchGroup.enter()
-        Service.shared.fetchAppGroup(urlStrin: "https://rss.itunes.apple.com/api/v1/us/ios-apps/top-free/all/50/explicit.json") {
+        Service.shared.fetchAppGroup(urlString: "https://rss.itunes.apple.com/api/v1/us/ios-apps/top-free/all/50/explicit.json") {
             (appGroup, err) in
             dispatchGroup.leave()
             group3 = appGroup
