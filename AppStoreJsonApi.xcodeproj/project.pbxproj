@@ -31,6 +31,8 @@
 		17C09B58232011F800FFE6B1 /* AppHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C09B57232011F800FFE6B1 /* AppHeaderCell.swift */; };
 		17D5B1BE233D149F00925E0B /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5B1BD233D149F00925E0B /* HorizontalSnappingController.swift */; };
 		17D5B1C0233D198E00925E0B /* BetterSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5B1BF233D198D00925E0B /* BetterSnappingLayout.swift */; };
+		17D5B1C3233F905000925E0B /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5B1C2233F905000925E0B /* AppDetailController.swift */; };
+		17D5B1C6233F9ABF00925E0B /* AppDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5B1C5233F9ABF00925E0B /* AppDetailCell.swift */; };
 		F7DE3099876885770FE109A7 /* Pods_AppStoreJsonApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		17C09B57232011F800FFE6B1 /* AppHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderCell.swift; sourceTree = "<group>"; };
 		17D5B1BD233D149F00925E0B /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
 		17D5B1BF233D198D00925E0B /* BetterSnappingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSnappingLayout.swift; sourceTree = "<group>"; };
+		17D5B1C2233F905000925E0B /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
+		17D5B1C5233F9ABF00925E0B /* AppDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailCell.swift; sourceTree = "<group>"; };
 		694596B772088E48D8A87565 /* Pods-AppStoreJsonApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C6C3E7BE050C08736E953D /* Pods-AppStoreJsonApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJsonApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJsonApi/Pods-AppStoreJsonApi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +170,7 @@
 		17C09B43231D7D2D00FFE6B1 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				17D5B1C1233F904100925E0B /* Details */,
 				17C09B45231D7D4B00FFE6B1 /* AppsController.swift */,
 				17C09B4D231D83DB00FFE6B1 /* AppsHorizontalController.swift */,
 				17C09B55232010AB00FFE6B1 /* AppsHeaderHorizontalController.swift */,
@@ -192,12 +197,29 @@
 		17C09B4A231D7F8A00FFE6B1 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				17D5B1C4233F94CF00925E0B /* Details */,
 				17C09B4B231D7FA200FFE6B1 /* AppsGroupCell.swift */,
 				17C09B4F231ED5D400FFE6B1 /* AppRowCell.swift */,
 				17C09B5323200DE000FFE6B1 /* AppsPageHeader.swift */,
 				17C09B57232011F800FFE6B1 /* AppHeaderCell.swift */,
 			);
 			path = Apps;
+			sourceTree = "<group>";
+		};
+		17D5B1C1233F904100925E0B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				17D5B1C2233F905000925E0B /* AppDetailController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		17D5B1C4233F94CF00925E0B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				17D5B1C5233F9ABF00925E0B /* AppDetailCell.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		39307EB4038C0E0BCA1A0C1C /* Pods */ = {
@@ -341,6 +363,7 @@
 				172DA34023294E000016B476 /* SocialApp.swift in Sources */,
 				17C09B58232011F800FFE6B1 /* AppHeaderCell.swift in Sources */,
 				17C09B46231D7D4B00FFE6B1 /* AppsController.swift in Sources */,
+				17D5B1C3233F905000925E0B /* AppDetailController.swift in Sources */,
 				1749623F22DCE7A70086C1F2 /* SearchResult.swift in Sources */,
 				1749623C22DB06440086C1F2 /* VerticalStackView.swift in Sources */,
 				172A1CFB22CA73E90049AEEC /* AppsSearchCell.swift in Sources */,
@@ -351,6 +374,7 @@
 				17C09B50231ED5D400FFE6B1 /* AppRowCell.swift in Sources */,
 				1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */,
 				17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */,
+				17D5B1C6233F9ABF00925E0B /* AppDetailCell.swift in Sources */,
 				17C09B52231EE1E800FFE6B1 /* Extensions.swift in Sources */,
 				17D5B1BE233D149F00925E0B /* HorizontalSnappingController.swift in Sources */,
 			);

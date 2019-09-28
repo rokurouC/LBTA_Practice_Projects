@@ -101,6 +101,12 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
         cell.titleLabel.text = appGroup.feed.title
         cell.horizontalController.appGroup = appGroup
         cell.horizontalController.collectionView.reloadData()
+        cell.horizontalController.didSelectdCellHandler = {[weak self] feedResult in
+            let appDetailController = AppDetailController()
+            appDetailController.title = feedResult?.name
+            appDetailController.view.backgroundColor = .white
+            self?.navigationController?.pushViewController(appDetailController, animated: true)
+        }
         return cell
     }
     

@@ -12,6 +12,7 @@ class AppsHorizontalController: HorizontalSnappingController, UICollectionViewDe
     
     let cellId = "cellId"
     var appGroup:AppGroup?
+    var didSelectdCellHandler: ((FeedResult?) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +44,11 @@ class AppsHorizontalController: HorizontalSnappingController, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return lineSpacing
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let app = appGroup?.feed.results[indexPath.item] {
+            didSelectdCellHandler?(app)
+        }
     }
 }
