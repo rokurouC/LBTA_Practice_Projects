@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1703355F2353908B00726458 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703355E2353908B00726458 /* Reviews.swift */; };
 		172A1CE322C920D30049AEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A1CE222C920D30049AEEC /* AppDelegate.swift */; };
 		172A1CE822C920D30049AEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172A1CE622C920D30049AEEC /* Main.storyboard */; };
 		172A1CEA22C920D70049AEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172A1CE922C920D70049AEEC /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJsonApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1703355E2353908B00726458 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		172A1CDF22C920D20049AEEC /* AppStoreJsonApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJsonApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172A1CE222C920D30049AEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172A1CE722C920D30049AEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				1749623E22DCE7A70086C1F2 /* SearchResult.swift */,
 				172DA33D2322DFCD0016B476 /* AppGroup.swift */,
 				172DA33F23294E000016B476 /* SocialApp.swift */,
+				1703355E2353908B00726458 /* Reviews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */,
 				17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */,
 				17D5B1C6233F9ABF00925E0B /* AppDetailCell.swift in Sources */,
+				1703355F2353908B00726458 /* Reviews.swift in Sources */,
 				17C09B52231EE1E800FFE6B1 /* Extensions.swift in Sources */,
 				175FDF5A2344F14400DDDA17 /* ReviewRowCell.swift in Sources */,
 				17D5B1BE233D149F00925E0B /* HorizontalSnappingController.swift in Sources */,

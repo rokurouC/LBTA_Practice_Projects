@@ -9,7 +9,7 @@
 import UIKit
 
 class ReviewCell: UICollectionViewCell {
-    let titleLabe: UILabel = UILabel(text: "Review title", font: .systemFont(ofSize: 18))
+    let titleLabel: UILabel = UILabel(text: "Review title", font: .systemFont(ofSize: 18))
     
     let authorLabel: UILabel = UILabel(text: "Author", font: .systemFont(ofSize: 16))
     
@@ -23,8 +23,9 @@ class ReviewCell: UICollectionViewCell {
         layer.cornerRadius = 16
         clipsToBounds = true
         
-        let stackView = VerticalStackView(arrangedSubViews: [UIStackView(arrangedSubviews: [titleLabe, UIView(), authorLabel]), startLabel, bodyLabel], spacing: 12)
+        let stackView = VerticalStackView(arrangedSubViews: [UIStackView(arrangedSubviews: [titleLabel, UIView(), authorLabel], customSpaceing: 8), startLabel, bodyLabel], spacing: 12)
         addSubview(stackView)
+        titleLabel.setContentCompressionResistancePriority(.init(0), for: .horizontal)
         stackView.fillSuperview(padding: .init(top: 20, left: 20, bottom: 20, right: 20))
     }
     

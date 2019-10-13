@@ -10,6 +10,7 @@ import UIKit
 
 class ReviewRowCell: UICollectionViewCell {
     var reviewController: ReviewController = ReviewController()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(reviewController.view)
