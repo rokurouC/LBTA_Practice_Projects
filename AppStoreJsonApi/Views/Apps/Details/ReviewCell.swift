@@ -15,7 +15,20 @@ class ReviewCell: UICollectionViewCell {
     
     let startLabel: UILabel = UILabel(text: "Startssefsfes\nfsef\nsefsef\nsefsefse", font: .systemFont(ofSize: 14))
     
-    let bodyLabel: UILabel = UILabel(text: "Startssefsfes\nfsef\nsefsef\nsefsefse", font: .systemFont(ofSize: 14), numberOfLines: 0)
+    let bodyLabel: UILabel = UILabel(text: "Startssefsfes\nfsef\nsefsef\nsefsefse", font: .systemFont(ofSize: 14), numberOfLines: 5)
+    
+    let starStackView: UIStackView = {
+        var arrangedSubviews = [UIView]()
+        (0..<5).forEach({(_) in
+            let imageView = UIImageView(image: #imageLiteral(resourceName: "star"))
+            imageView.constrainWidth(constant: 24)
+            imageView.constrainHeight(constant: 24)
+            arrangedSubviews.append(imageView)
+        })
+        arrangedSubviews.append(UIView())
+        let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
+        return stackView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,10 +36,10 @@ class ReviewCell: UICollectionViewCell {
         layer.cornerRadius = 16
         clipsToBounds = true
         
-        let stackView = VerticalStackView(arrangedSubViews: [UIStackView(arrangedSubviews: [titleLabel, UIView(), authorLabel], customSpaceing: 8), startLabel, bodyLabel], spacing: 12)
+        let stackView = VerticalStackView(arrangedSubViews: [UIStackView(arrangedSubviews: [titleLabel, UIView(), authorLabel], customSpaceing: 8), starStackView, bodyLabel], spacing: 12)
         addSubview(stackView)
         titleLabel.setContentCompressionResistancePriority(.init(0), for: .horizontal)
-        stackView.fillSuperview(padding: .init(top: 20, left: 20, bottom: 20, right: 20))
+        stackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 20))
     }
     
     required init?(coder: NSCoder) {
