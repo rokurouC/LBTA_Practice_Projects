@@ -56,6 +56,12 @@ class AppsSearchCollectionViewController: BaseListController, UISearchBarDelegat
         })
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let appId = results[indexPath.item].trackId
+        let appDetailViewController = AppDetailController(appId: String(appId))
+        navigationController?.pushViewController(appDetailViewController, animated: true)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         enterSearchTermLabe.isHidden = results.count != 0
         return results.count
