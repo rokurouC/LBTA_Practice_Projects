@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1703355F2353908B00726458 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703355E2353908B00726458 /* Reviews.swift */; };
+		1715702B235A2960008009C6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715702A235A2960008009C6 /* TodayViewController.swift */; };
+		1715702E235A299C008009C6 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715702D235A299C008009C6 /* TodayCell.swift */; };
 		172A1CE322C920D30049AEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A1CE222C920D30049AEEC /* AppDelegate.swift */; };
 		172A1CE822C920D30049AEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172A1CE622C920D30049AEEC /* Main.storyboard */; };
 		172A1CEA22C920D70049AEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172A1CE922C920D70049AEEC /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		0E52E864E317DEBDE53E041F /* Pods_AppStoreJsonApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJsonApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1703355E2353908B00726458 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		1715702A235A2960008009C6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1715702D235A299C008009C6 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
 		172A1CDF22C920D20049AEEC /* AppStoreJsonApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJsonApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172A1CE222C920D30049AEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172A1CE722C920D30049AEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17157029235A294B008009C6 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				1715702A235A2960008009C6 /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		1715702C235A2992008009C6 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				1715702D235A299C008009C6 /* TodayCell.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 		172A1CD622C920D20049AEEC = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +153,7 @@
 		172A1CF622CA546D0049AEEC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				17157029235A294B008009C6 /* Today */,
 				17C09B44231D7D3700FFE6B1 /* Search */,
 				17C09B43231D7D2D00FFE6B1 /* Apps */,
 				17C09B47231D7D5D00FFE6B1 /* BaseListController.swift */,
@@ -144,6 +165,7 @@
 		172A1CF922CA73BC0049AEEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1715702C235A2992008009C6 /* Today */,
 				17C09B4A231D7F8A00FFE6B1 /* Apps */,
 				17C09B49231D7F8200FFE6B1 /* Search */,
 			);
@@ -374,6 +396,7 @@
 			files = (
 				17C09B48231D7D5D00FFE6B1 /* BaseListController.swift in Sources */,
 				172A1CE322C920D30049AEEC /* AppDelegate.swift in Sources */,
+				1715702B235A2960008009C6 /* TodayViewController.swift in Sources */,
 				17C09B4C231D7FA200FFE6B1 /* AppsGroupCell.swift in Sources */,
 				17D5B1C0233D198E00925E0B /* BetterSnappingLayout.swift in Sources */,
 				175FDF5C2344F30700DDDA17 /* ReviewController.swift in Sources */,
@@ -397,6 +420,7 @@
 				1749623A22DAFF370086C1F2 /* UIView+Layout.swift in Sources */,
 				17C09B4E231D83DB00FFE6B1 /* AppsHorizontalController.swift in Sources */,
 				17D5B1C6233F9ABF00925E0B /* AppDetailCell.swift in Sources */,
+				1715702E235A299C008009C6 /* TodayCell.swift in Sources */,
 				1703355F2353908B00726458 /* Reviews.swift in Sources */,
 				17C09B52231EE1E800FFE6B1 /* Extensions.swift in Sources */,
 				175FDF5A2344F14400DDDA17 /* ReviewRowCell.swift in Sources */,

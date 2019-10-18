@@ -12,18 +12,20 @@ class BaseTabBarCOntroller: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers = [
+            createNavController(viewController: TodayViewController(), title: "Today", tabBarItemImgName: "today_icon"),
             createNavController(viewController: AppsPageController(), title: "Apps", tabBarItemImgName: "apps"),
-            createNavController(viewController: AppsSearchCollectionViewController(), title: "Search", tabBarItemImgName: "search"),
-            createNavController(viewController: UIViewController(), title: "Today", tabBarItemImgName: "today_icon")]
+            createNavController(viewController: AppsSearchCollectionViewController(), title: "Search", tabBarItemImgName: "search")
+            ]
         
     }
     
     func createNavController(viewController: UIViewController, title: String, tabBarItemImgName: String) -> UIViewController {
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.navigationBar.prefersLargeTitles = true
         viewController.navigationItem.title = title
         viewController.view.backgroundColor = UIColor.white
-        let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem.title = title
-        navController.navigationBar.prefersLargeTitles = true
         navController.tabBarItem.image = UIImage(named: tabBarItemImgName)
         return navController
     }
