@@ -28,9 +28,34 @@ class TodayViewController: BaseListController, UICollectionViewDelegateFlowLayou
         return 32
     }
     
+    var startingFrame: CGRect?
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("tap...")
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        guard let startFrame = cell.superview?.convert(cell.frame, to: nil) else { return }
+        startingFrame = startFrame
+        let preview = UIView()
+        preview.backgroundColor = .red
+        preview.frame = startingFrame!
+        view.addSubview(preview)
+        preview.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleRemoviewView)))
+        preview.layer.cornerRadius = 16
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
+            preview.frame = self.view.frame
+            preview.layer.cornerRadius = 0
+        }, completion: nil)
     }
+    
+    @objc func handleRemoviewView(gesture: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
+            gesture.view?.frame = self.startingFrame ?? .zero
+            gesture.view?.layer.cornerRadius = 16
+        }) { _ in
+            gesture.view?.removeFromSuperview()
+        }
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .init(top: 32, left: 0, bottom: 32, right: 0)
     }
